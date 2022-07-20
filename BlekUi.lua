@@ -427,7 +427,7 @@ function Library:Create(table)
             toggle1.MouseButton1Click:Connect(function()
                 tog = not tog
                 callback(tog)
-                if tog then
+                if tog == true then
                     game:GetService('TweenService'):Create(frame3, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(23, 143, 75)}):Play()
                     game:GetService('TweenService'):Create(uIStroke1, TweenInfo.new(0.2), {Color = Color3.fromRGB(32, 202, 106)}):Play()
                 else
